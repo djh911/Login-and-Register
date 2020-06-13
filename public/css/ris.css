@@ -1,0 +1,25 @@
+.register{
+	display: none;
+	width: 220px;
+	height: 240px;
+	margin: 50px auto;
+	background-color: dodgerblue;
+	z-index: 100;
+	padding: 0 50px;
+}
+
+.register input{
+	
+	width: 200px;
+	height: 30px;
+	margin-top: 16px;
+	
+}
+
+.register .ris{
+	margin-top: 20px;
+	width: 200px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: aqua;
+}
