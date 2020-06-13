@@ -4,3 +4,4 @@
 2.打开浏览器，访问http://localhost:5000/index.html，访问成功则会跳到登录界面；
 3.点击注册，进行注册。注册的内容可用在user.txt文件中查看
 4.本案例使用的Ajax进行发送post请求,传递参数格式为json
+5.test.js仅用来测试，请忽略
