@@ -31,7 +31,7 @@ function ajax(options) {
     var contentType = defaults.header['Content-Type']
     xhr.setRequestHeader('Content-type',contentType)
     if(contentType == 'application/json'){
-      console.log('使用post请求传递json格式的参数')
+      //console.log('使用post请求传递json格式的参数')
       xhr.send(JSON.stringify(defaults.data))
     }else{
       xhr.send(params)
@@ -45,7 +45,7 @@ function ajax(options) {
   xhr.onload = function () {
     //xhr.getResponseHeader()
     var strType = xhr.getResponseHeader('Content-Type')
-    console.log(strType)
+   // console.log(strType)
     var responseText = xhr.responseText
     if(strType.includes('application/json')){
       responseText = JSON.parse(responseText)

@@ -28,7 +28,14 @@ $(function() {
           'Content-Type':'application/json'
         },
         success:(responseText,xhr)=>{
-					alert(username + '欢迎您')
+					if(responseText=='登录成功'){
+            alert(username + '欢迎您')
+					}else{
+						alert(username+'账号密码错误')
+						//$loginUsername.val('')
+						$loginPassword.val('')
+					}
+
 				},
         error:function (responseText,xhr){
         	console.log('失败')

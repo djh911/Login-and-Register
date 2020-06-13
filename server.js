@@ -23,7 +23,7 @@ server.post('/login',(req,res)=>{
     if(!err){
       var allUser = data.toString()
       if(allUser.includes(userStr)){
-        res.send(result)
+        res.send('登录成功')
       }else{
         res.send('账号或密码有误')
       }
